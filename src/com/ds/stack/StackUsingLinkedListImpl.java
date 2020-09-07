@@ -10,6 +10,8 @@ public class StackUsingLinkedListImpl {
 		st.display();
 		st.push(4);
 		st.display();
+		st.pop();
+		st.display();
 
 	}
 
