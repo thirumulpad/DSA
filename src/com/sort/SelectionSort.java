@@ -1,11 +1,11 @@
 package com.sort;
 
-public class BubbleSort {
+public class SelectionSort {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 50, 30, 10, 70, 80, 2 };
 		printArray("Before Sorting", arr);
-		bubbleSort(arr);
+		selectionSort(arr);
 		printArray("After Sorting", arr);
 
 	}
@@ -19,18 +19,20 @@ public class BubbleSort {
 
 	// big(O) time complexity= O(n^2)
 	// big(O) space complexity= O(1)
-	private static void bubbleSort(int[] arr) {
-
-		int n = arr.length;
-		int temp = 0;
-		for (int i = 0; i < n; i++) {
-			for (int j = 1; j < (n - i); j++) {
-				if (arr[j - 1] > arr[j]) {
-					temp = arr[j - 1];
-					arr[j - 1] = arr[j];
-					arr[j] = temp;
+	private static void selectionSort(int[] arr) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			int index = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[j] < arr[index]) {
+					index = j;
 				}
+			}
+			if (index != i) {
+				int temp = arr[index];
+				arr[index] = arr[i];
+				arr[i] = temp;
 			}
 		}
 	}
+
 }
