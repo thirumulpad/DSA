@@ -1,11 +1,11 @@
-package com.searching.linear;
+package com.searching;
 
-public class DataSetForLinearSearch {
+public class DataSet {
 
 	int[] data;
 	int numberTry;
 
-	public DataSetForLinearSearch(int size) {
+	public DataSet(int size) {
 		data = new int[size];
 		for (int i = 1; i <= size; i++) {
 			data[i - 1] = i;

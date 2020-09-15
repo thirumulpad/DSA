@@ -1,9 +1,9 @@
-package com.searching.linear;
+package com.searching;
 
 public class LinearSeach {
 
 	public static void main(String[] args) {
-		DataSetForLinearSearch data = new DataSetForLinearSearch(100000);
+		DataSet data = new DataSet(100000);
 		int search = 99999;
 		for (int i = 0; i < data.getSize(); i++) {
 			data.numberTry++;
