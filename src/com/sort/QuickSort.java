@@ -16,7 +16,9 @@ public class QuickSort {
 			System.out.print(arr[i] + "\t");
 		System.out.println("\n");
 	}
-
+	
+	// time complexity O(n^2)
+	// space complexity log(n)
 	private static void quickSort(int[] arr, int low, int high) {
 
 		if (low > high) {
