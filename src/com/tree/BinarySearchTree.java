@@ -1,10 +1,31 @@
 package com.tree;
 
+import java.util.ArrayList;
+
 public class BinarySearchTree {
 	BinaryNode root;
+	ArrayList<Integer> visitNodes = new ArrayList<Integer>();
+	int steps = 0;
 
 	public BinarySearchTree() {
 		root = null;
+	}
+
+	public void findPath(int searchValue, BinaryNode currentNode) {
+
+		if (!visitNodes.contains(currentNode.value)) {
+			steps++;
+			visitNodes.add(currentNode.value);
+		} else {
+			steps--;
+		}
+
+		if (currentNode.value == searchValue)
+			return;
+		if (searchValue > currentNode.value)
+			findPath(searchValue, currentNode.rightPointer);
+		if (searchValue < currentNode.value)
+			findPath(searchValue, currentNode.leftPointer);
 	}
 
 	public void addNode(BinaryNode startNode, BinaryNode newNode) {

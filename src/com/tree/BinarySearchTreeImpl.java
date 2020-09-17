@@ -13,6 +13,11 @@ public class BinarySearchTreeImpl {
 
 		bst.search(11, bst.root);
 
+		bst.findPath(11, bst.root);
+		bst.findPath(13, bst.root);
+		System.out.println(bst.steps);
+		System.out.println(bst.visitNodes);
+		
 	}
 
 }
