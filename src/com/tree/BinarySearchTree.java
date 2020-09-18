@@ -3,7 +3,7 @@ package com.tree;
 import java.util.ArrayList;
 
 public class BinarySearchTree {
-	BinaryNode root;
+	public BinaryNode root;
 	ArrayList<Integer> visitNodes = new ArrayList<Integer>();
 	int steps = 0;
 
