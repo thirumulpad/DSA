@@ -20,8 +20,8 @@ public class MirrorBinaryTree {
 		BinaryNode node4 = new BinaryNode(12, null, null);
 		BinaryNode node11 = new BinaryNode(7, null, null);
 		BinaryNode node22 = new BinaryNode(13, null, null);
-		BinaryNode node33 = new BinaryNode(15, null, null);
-		BinaryNode node44 = new BinaryNode(12, null, null);
+		BinaryNode node33 = new BinaryNode(12, null, null);
+		BinaryNode node44 = new BinaryNode(15, null, null);
 		// first tree
 		tree1.leftPointer = node1;
 		tree1.rightPointer = node2;
