@@ -11,9 +11,11 @@ public class EntryTest {
 		for (int value : integerList) {
 			Entry entry = new Entry(value, 1);
 			if (map.containsKey(entry)) {
-				count = map.get(entry);
-			} else
-				arrayList.add(entry);
+				int count = map.get(entry);
+				
+			} 
+			
+			
 			System.out.println("value : " + entry.value + " has " + entry.count + "counts");
 		}
 
