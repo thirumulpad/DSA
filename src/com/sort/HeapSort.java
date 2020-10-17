@@ -20,6 +20,7 @@ public class HeapSort {
 		System.out.println("\n");
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void heapify(Comparable[] array, int i) {
 		int lft = i * 2;
 		int rgt = i * 2 + 1;
@@ -36,12 +37,14 @@ public class HeapSort {
 		}
 	}
 
+	@SuppressWarnings("rawtypes")
 	private static void swap(Comparable[] array, int a, int b) {
 		Comparable temp = array[a];
 		array[a] = array[b];
 		array[b] = temp;
 	}
 
+	@SuppressWarnings("rawtypes")
 	private static void heapSort(Comparable[] array) {
 		total = array.length - 1;
 		for (int i = total / 2; i >= 0; i--)
