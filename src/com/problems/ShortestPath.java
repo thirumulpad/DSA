@@ -9,7 +9,10 @@ public class ShortestPath {
 
 	public static void main(String[] args) {
 
-		int[][] grid = { { 1, 1, 1, 1, 0 }, { 0, 0, 0, 1, 0 }, { 0, 0, 1, 1, 0 }, { 1, 1, 9, 1, 0 } };
+		int[][] grid = {{ 1, 1, 1, 1, 0 }, 
+						{ 0, 0, 0, 1, 0 },
+						{ 0, 0, 1, 1, 0 },
+						{ 1, 1, 9, 1, 0 } };
 		printGrid(grid);
 		Queue<Cell> myQueue = new LinkedList<Cell>();
 		move(myQueue, grid, 0, 0, 0);
